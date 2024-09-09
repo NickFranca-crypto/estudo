@@ -1,1 +1,18 @@
-console.log("Hello, world!");
+// Função para validar o login
+function login() {
+    // Credenciais estáticas para validação
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    
+    // Nome de usuário e senha corretos
+    const validUsername = "usuario";
+    const validPassword = "123456";
+
+    // Verifica se o nome de usuário e a senha estão corretos
+    if (username === validUsername && password === validPassword) {
+        alert("Login bem-sucedido!");
+        // Redireciona ou faz algo quando o login for correto
+    } else {
+        document.getElementById('error-message').innerText = "Nome de usuário ou senha incorretos.";
+    }
+}
