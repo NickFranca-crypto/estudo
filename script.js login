@@ -15,31 +15,6 @@ function login() {
     } else {
         document.getElementById('error-message').innerText = "Nome de usuário ou senha incorretos.";
 
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que a página seja recarregada
-
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que a página seja recarregada
-
-    // Captura os valores inseridos no formulário
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    // Usuário e senha corretos para login (pode personalizar)
-    const validUsername = 'admin';
-    const validPassword = '123456';
-
-    // Verifica se o usuário e a senha são corretos
-    if (username === validUsername && password === validPassword) {
-        alert('Login bem-sucedido!');
-        document.getElementById('error').textContent = ''; // Limpa a mensagem de erro
-        // Aqui você pode redirecionar o usuário para outra página ou realizar outras ações
-    } else {
-        // Exibe a mensagem de erro caso as credenciais estejam erradas
-        document.getElementById('error').textContent = 'Usuário ou senha inválidos. Tente novamente.';
-    }
-});
-
     // Captura os valores inseridos no formulário
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
